@@ -1,0 +1,19 @@
+  body{  
+    font: 18px Verdana;
+    background-color: rgb(255,242,242);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    background-image: url("AdobeStock_332360272.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  html{
+    background-image: url("AdobeStock_332360272.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }

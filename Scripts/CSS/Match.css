@@ -1,3 +1,8 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,6 +12,7 @@ body {
     background-color: rgb(255,242,242);
     font-family: 'Work Sans', sans-serif;
     font-size: 1em;
+    min-height: 100%;
 }
 #picbox {
 	margin: 0px auto;
@@ -14,7 +20,9 @@ body {
 }
 #boxcard {
 	z-index: 1;
-	margin: 10px 0 0;
+	width: 80%;
+    margin-top: 10px;
+    margin-left: 100px;
 }
 #boxcard div{
 	float: left;
@@ -47,4 +55,13 @@ body {
 }
 #boxbuttons .button:hover {
 	background: #999;
+}
+
+#CVInfo{
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-top: 120px;
+    margin-left: 75px;
+    font-weight: bold;
 }

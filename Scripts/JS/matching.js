@@ -51,6 +51,7 @@ function ResetGame() {
 	BoxOpened = "";
 	ImgOpened = "";
 	ImgFound = 0;
+    $("#CVInfo").empty();
 	return false;
 }
 
@@ -78,8 +79,63 @@ function OpenCard() {
 					ImgOpened = "";
 				}, 400);
 			} else {
+                var image = $( "#" + id + " img").attr("src");
 				$("#" + id + " img").parent().css("visibility", "hidden");
 				$("#" + BoxOpened + " img").parent().css("visibility", "hidden");
+                if(image.includes("BRBPRINT")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("@The Academy ICT NL <br /> Bootcamp, Computer Software Engineering <br /> July 2022-September 2022 <br />");
+                    $("#CVInfo").append("* Object georienteerd programmeren <br /> ");
+                    $("#CVInfo").append(" * Java / C# <br /> " );
+                    $("#CVInfo").append(" * UML <br /> ");
+                    $("#CVInfo").append(" * SQL en Data <br />");
+                    $("#CVInfo").append("* Testing <br />");
+                    $("#CVInfo").append(" * REST <br />");
+                    $("#CVInfo").append(" * JSON <br /> ");
+                    $("#CVInfo").append("* Mendix <br />");
+                    $("#CVInfo").append("* Javascript / HTML / CSS <br />");
+                    $("#CVInfo").append(" * Informatie analyse <br />");
+                    $("#CVInfo").append(" * Design Pattern <br /> ");
+                    $("#CVInfo").append("* DevOps <br />");
+                    $("#CVInfo").append(" * EXIN Agile Scrum Foundation, Pearson VUE * Software Development, Oracle Certified Associate");
+                }
+
+                if(image.includes("Oracle")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("Oracle SE 8 Programmer I: 1Z0-808 <br />  Behaald op 9 September 2022");
+                }
+
+                if(image.includes("EXIN")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("Exin Agile Scrum Foundation <br />  Behaald op 7 Juli 2022");
+                }
+
+                if(image.includes("ITS")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("Pearson Vue: Information Technology Specialist: Software Development <br />  Behaald op 12 Augustus 2022");
+                }
+
+                if(image.includes("logo")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("Software Developer 2016 - 2017 <br /> HIGHSKILLS AND MORE | Tel Aviv <br /> PHP Projecten met Moodle, Drupal, Wordpress en C# projecten met Sharepoint");
+                }
+                if(image.includes("JohnBryce")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("C# .Net and Web Development <br /> 2015-2016, Tel Aviv <br /> Skills geleerd:  C#, .NET, ADO.NET, HTML 5, CSS 3, MVC 4, JavaScript,JQuery/JQuery Mobile, ASP.NET ");
+                }
+
+                if(image.includes("Hacker")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("HackerU <br /> Animation and 3D Animation Maya <br /> 2010-2012 <br /> Skills geleerd: Photoshop, Flash, Maya, Illustrator, After Effects, Premiere");
+                    $("#CVInfo").append("<br /> Twee films gemaakt:  <br/> Man on the moon: <a href='https://www.youtube.com/watch?v=jjZp-3HyDDc&ab_channel=arelbokobza' target='_blank'> https://www.youtube.com/watch?v=jjZp-3HyDDc&ab_channel=arelbokobza </a> <br /> Bad Hare Day: <a href=' https://vimeo.com/147268732' target='_blank'> https://vimeo.com/147268732 </a>");
+                }
+
+                if(image.includes("Fontys")){
+                    $("#CVInfo").empty();
+                    $("#CVInfo").append("Fontys Bachelor of Physiotherapy <br /> 2018-2022: Niet afgerond maar Propedeuse gehaald en Minor Kinder Fysiotherapie <br /> <br /> Fontys Corona Medewerker <br /> 2022 <br />  Avondlessen gegeven aan eerste- en tweedejaarsstudenten");
+                    $("#CVInfo").append("<br /> Fontys Student Ambassador <br /> 2018-2021 <br /> Rondleiding gegeven aan prospectief studenten, Introductie eerste jaars studenten, Unibuddy");
+                }
+               
 				ImgFound++;
 				BoxOpened = "";
 				ImgOpened = "";
@@ -92,7 +148,8 @@ function OpenCard() {
 		$("#counter").html("" + Counter);
 
 		if (ImgFound == ImgSource.length) {
-			$("#counter").prepend('<span id="success">You Found All Pictues With </span>');
+			$("#counter").prepend('<span id="success">You Found All Pictures With </span>');
+            $("#picboc").append("<div><Hello this is my CV/div>")
 		}
 	}
 }
