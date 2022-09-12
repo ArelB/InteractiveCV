@@ -9,10 +9,14 @@ html{
 }
 body {
 	font: 18px Verdana;
-    background-color: rgb(255,242,242);
     font-family: 'Work Sans', sans-serif;
     font-size: 1em;
     min-height: 100%;
+    background-image: url("AdobeStock_412821610.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
 }
 #picbox {
 	margin: 0px auto;
@@ -64,4 +68,5 @@ body {
     margin-top: 120px;
     margin-left: 75px;
     font-weight: bold;
+    color: black;
 }

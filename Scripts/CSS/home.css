@@ -17,3 +17,18 @@
     background-size: cover;
     color: white;
   }
+
+  .pageContent{
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .Title{
+
+  }
+
+  
