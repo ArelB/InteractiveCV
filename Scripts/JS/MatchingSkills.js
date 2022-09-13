@@ -6,12 +6,13 @@ var ImgFound = 0;
 var Source = "#boxcard";
 
 var ImgSource = [
-    "./Resources/Images/gameController.png",
-    "./Resources/Images/note.png",
-    "./Resources/Images/television.png",
-    "./Resources/Images/tech.png",
-    "./Resources/Images/pathe.png",
-    "./Resources/Images/piano.png"
+    "./Resources/Images/java-logo.png",
+    "./Resources/Images/Javascript.png",
+    "./Resources/Images/HTML.png",
+    "./Resources/Images/PHP.png",
+    "./Resources/Images/CSS.png",
+    "./Resources/Images/cSharp.png"
+    
 ];
 
 function RandomFunction(MaxValue, MinValue) {
@@ -80,35 +81,6 @@ function OpenCard() {
                 var image = $( "#" + id + " img").attr("src");
 				$("#" + id + " img").parent().css("visibility", "hidden");
 				$("#" + BoxOpened + " img").parent().css("visibility", "hidden");
-                if(image.includes("tech")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Als kind was ik altijd al gefascineerd door technologie. Het begon met computers, en leidde toen tot consoles en gadgets. <br /> Een droom van mijn is om ooit mijn eigen gadget te bouwen en te programmeren.");
-                }
-
-                if(image.includes("note")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Als liefhebber van muziek speel ik ongeveer 6 jaar piano. Waaronder het componeren van mijn eigen korte composities hier op youtube: <a href='https://www.youtube.com/watch?v=L2pNJvjsG6s&ab_channel=arelbokobza' target='_blank'> Piano compositie</a> <br /><br />Als ik zelf naar muziek luister, is mijn favoriete genre alternatieve rock.");
-                }
-
-                if(image.includes("piano")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Als liefhebber van muziek speel ik ongeveer 6 jaar piano. Waaronder het componeren van mijn eigen korte composities hier op youtube:<a href='https://www.youtube.com/watch?v=L2pNJvjsG6s&ab_channel=arelbokobza' target='_blank'> Piano compositie</a>  <br /><br />Als ik zelf naar muziek luister, is mijn favoriete genre alternatieve rock.");
-                }
-
-                if(image.includes("television")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Tv-shows zijn nog een van mijn passies. Ik hou van alle genres van televisie, maar mijn favoriete programma's zouden scrubs en the leftovers moeten zijn.");
-                }
-
-                if(image.includes("pathe")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Ik ga graag naar de bioscoop, vooral Pathe. Ik ga regelmatig met mijn vriendin naar de nieuwste films.<br /> Een van mijn favoriete films is Gardenstate. Ik hou echt van films met goede karakters en een interessant verhaal.");
-                }
-
-                if(image.includes("gameController")){
-                    $("#CVInfo").empty();
-                    $("#CVInfo").append("Ik hou van video games. Mijn grootste hobby van allemaal, ik begon te gamen op de originele gameboy en tot op de dag van vandaag speel ik nog steeds op moderne consoles zoals de Xbox Series X en pc-gaming.<br /><br /> Mijn interesse in programmeren begon met mijn liefde voor videogames. Ik was gefascineerd door hoe games werkten en hoe mijn acties de gamewereld konden veranderen. Ik heb veel tijd geinvesteerd om te begrijpen hoe het werkte en dit leidde me naar programmeren.");
-                }
                
 				ImgFound++;
 				BoxOpened = "";
