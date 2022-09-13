@@ -8,10 +8,11 @@ html{
 	padding: 0;
 }
 body {
-	font: 18px Verdana;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
+	font-family: 'Neue Haas Grotesk Display Pro';
+    font-weight: 900;
+    font-style: italic;
     min-height: 100%;
+    font-size:  1.5em;
     background-image: url("AdobeStock_412821610.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;

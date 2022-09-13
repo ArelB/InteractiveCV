@@ -1,0 +1,69 @@
+body{  
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1em;
+    background-image: url("AdobeStock_234506026.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+  }
+
+  html{
+    background-image: url("AdobeStock_234506026.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+  }
+
+  .pageContent{
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .Title{
+    font-size: 2rem;
+    margin-top: 15px;
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+.avatar{
+    width: 125px; 
+    height: 125px; 
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.button{
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: line;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    height: 70px;
+}
+
+p{
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+.VideoPlayer{
+    width: 42%;
+    float: right;
+
+}
+  

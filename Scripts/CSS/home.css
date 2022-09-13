@@ -1,7 +1,7 @@
   body{  
-    font: 18px Verdana;
-    background-color: rgb(255,242,242);
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-weight: 900;
+    font-style: italic;
     font-size: 1em;
     background-image: url("AdobeStock_332360272.jpeg");
     background-repeat: no-repeat;
@@ -28,7 +28,72 @@
   }
 
   .Title{
-
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
+.avatar{
+    width: 125px; 
+    height: 125px; 
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.button{
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: line;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    height: 70px;
+}
   
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+  }
+  
+  a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    color:white;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
